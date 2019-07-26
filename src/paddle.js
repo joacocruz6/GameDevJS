@@ -13,4 +13,8 @@ export default class Paddle {
         ctx.fillStyle='#0ff';
         ctx.fillRect(this.position.x,this.position.y,this.width,this.height);
     }
+    update(dt){
+        if(!deltaTime) return;
+        this.position.x += 5/dt;
+    }
 }
